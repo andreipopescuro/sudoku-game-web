@@ -1,0 +1,72 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.infoText {
+  color: rgb(176, 105, 105);
+}
+
+.pickerButtonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pickerButton {
+  margin: 0 2px;
+}
+
+.boardContainer {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  row-gap: 4px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.boardButton {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 16px auto;
+}
+
+.selected {
+  outline: none;
+  box-shadow: 0 0 2px 2px rgb(21, 88, 170);
+}
+
+.pickerButton:focus {
+  outline: none;
+}
+
+.boardButton:focus {
+  outline: none;
+}
+
+.correct {
+  background-color: rgb(52, 167, 35);
+}
+
+.wrong {
+  background-color: crimson;
+}
+
+@media screen and (max-width: 500px) {
+  .boardButton {
+    width: 40px;
+  }
+}
